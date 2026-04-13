@@ -25,6 +25,7 @@ class CategoriesController extends Controller
     public function create()
     {
         //
+        
     }
 
     /**
@@ -54,7 +55,8 @@ class CategoriesController extends Controller
     public function show($id)
     {
         //mostrar todos a categoria e todos os produtos dela**********************************
-
+        $categorie = Categories::with('products')->findOrFail($id);
+        return response()->json($categorie,200);
     }
 
     /**

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\OrdersProduct;
+use App\Models\sizes_products;
 use Illuminate\Http\Request;
 
-class OrdersProductController extends Controller
+class SizesProductsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class OrdersProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(OrdersProduct $ordersProduct)
+    public function show(sizes_products $sizes_products)
     {
         //
     }
@@ -42,7 +42,7 @@ class OrdersProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(OrdersProduct $ordersProduct)
+    public function edit(sizes_products $sizes_products)
     {
         //
     }
@@ -50,7 +50,7 @@ class OrdersProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, OrdersProduct $ordersProduct)
+    public function update(Request $request, sizes_products $sizes_products)
     {
         //
     }
@@ -58,16 +58,8 @@ class OrdersProductController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(OrdersProduct $ordersProduct)
+    public function destroy(sizes_products $sizes_products)
     {
         //
-    }
-
-    public function listProductsOrder($id){
-        try{
-            
-        }catch(\Throwable $th){
-
-        }
     }
 }
